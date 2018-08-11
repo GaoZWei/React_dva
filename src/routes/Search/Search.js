@@ -3,7 +3,12 @@ import {connect} from 'dva';
 import {Layout, Menu, Icon, Avatar} from 'antd';
 import NavLeft from '../../components/NavComponent/NavLeft'
 import SearchInput from '../../components/SearchComponent/SearchInput'
+import SearchList from '../../components/SearchComponent/SearchList'
+import SearchContent from '../../components/SearchComponent/SearchContent'
+import Foot from '../../components/CommonComponent/Foot'
+
 const {Sider} = Layout;
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -57,8 +62,15 @@ class Search extends React.Component {
             </Menu.Item>
           </Menu>
         </Sider>
-        <Layout style={{marginLeft: 200,marginTop:50,backgroundColor:'white'}}>
-        <SearchInput/>
+        <Layout>
+          <Layout style={{marginLeft: 200, width: 400, backgroundColor: 'white'}}>
+            <Layout style={{alignItems: 'center'}}> <SearchInput/></Layout>
+            <SearchList/>
+          </Layout>
+        </Layout>
+        <Layout style={{marginLeft:2,width:700}}>
+          <SearchContent/>
+          <Foot/>
         </Layout>
       </Layout>
     );
