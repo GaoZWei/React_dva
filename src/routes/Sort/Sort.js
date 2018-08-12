@@ -2,19 +2,14 @@ import React from 'react';
 import {connect} from 'dva';
 import {Layout, Menu, Icon, Avatar} from 'antd';
 import NavLeft from '../../components/NavComponent/NavLeft';
-import SortList from '../../components/SortComponent/SortList';
-import ContentBreadcrumb from '../../components/ContentComponent/ContentBreadcrumb'
-import ContentMain from '../../components/ContentComponent/ContentMain'
-
-const {Sider} = Layout;
-
-class HomePage extends React.Component {
+import SortList from '../../components/SortComponent/SortList'
+const {Sider}=Layout;
+class Sort extends React.Component {
   constructor(props) {
     super(props);
   }
-
-  render() {
-    return (
+render(){
+    return(
       <Layout>
         <Sider style={{overflow: 'auto', height: '100vh', position: 'fixed', left: 0}}>
           <div className="logo"/>
@@ -61,18 +56,12 @@ class HomePage extends React.Component {
             </Menu.Item>
           </Menu>
         </Sider>
-        <SortList/>
         <Layout>
-          <ContentBreadcrumb/>
-          <ContentMain/>
+          <SortList/>
         </Layout>
-        <div style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 580}}>
-          {this.props.children}
-        </div>
-
       </Layout>
     );
-  }
+}
 }
 
-export default connect()(HomePage);
+export default Sort;

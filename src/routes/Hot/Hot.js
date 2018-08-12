@@ -1,14 +1,12 @@
 import React from 'react';
 import {connect} from 'dva';
 import {Layout, Menu, Icon, Avatar} from 'antd';
-import NavLeft from '../../components/NavComponent/NavLeft';
-import SortList from '../../components/SortComponent/SortList';
-import ContentBreadcrumb from '../../components/ContentComponent/ContentBreadcrumb'
-import ContentMain from '../../components/ContentComponent/ContentMain'
+import NavLeft from '../../components/NavComponent/NavLeft'
+import HotPage from '../../components/HotComponent/HotKnowledge'
 
 const {Sider} = Layout;
 
-class HomePage extends React.Component {
+class Hot extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -61,18 +59,12 @@ class HomePage extends React.Component {
             </Menu.Item>
           </Menu>
         </Sider>
-        <SortList/>
-        <Layout>
-          <ContentBreadcrumb/>
-          <ContentMain/>
+        <Layout style={{marginLeft:200,width:700}}>
+         <HotPage/>
         </Layout>
-        <div style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 580}}>
-          {this.props.children}
-        </div>
-
       </Layout>
     );
   }
 }
 
-export default connect()(HomePage);
+export default connect()(Hot);
