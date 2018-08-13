@@ -18,8 +18,8 @@ const data = [
 ];
 const SearchList = () => (
   <List
-    header={<div>Header</div>}
-    footer={<div>Footer</div>}
+    header={<div>搜索结果:</div>}
+    footer={<div>点击加载更多</div>}
     bordered
     dataSource={data}
     renderItem={item => (<List.Item>

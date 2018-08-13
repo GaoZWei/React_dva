@@ -2,9 +2,10 @@ import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 import HomePage from './routes/HomePage/HomePage';
 import Search from './routes/Search/Search';
-import Sort from './routes/Sort/Sort'
-import Online from './routes/Online/Online'
-import Hot from './routes/Hot/Hot'
+import Sort from './routes/Sort/Sort';
+import Online from './routes/Online/Online';
+import Hot from './routes/Hot/Hot';
+import Knowledge from './routes/Knowledge/Knowledge'
 
 function RouterConfig({ history }) {
   return (
@@ -15,6 +16,7 @@ function RouterConfig({ history }) {
         <Route path="/sort" exact component={Sort} />
         <Route path="/online" exact component={Online} />
         <Route path="/hot" exact component={Hot} />
+        <Route path="/knowledge" exact component={Knowledge} />
       </Switch>
     </Router>
   );
