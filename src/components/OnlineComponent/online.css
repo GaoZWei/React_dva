@@ -22,13 +22,13 @@
 /*.ant-carousel .slick-slider h3 {*/
   /*color: darkslategray;*/
 /*}*/
-/*覆盖默认可以自定义添加样式,防止污染*/
+/*覆盖默认可以自定义添加样式,防止污染,css:module全局默认样式*/
 .lunbo{
   margin-left: 200px;
   text-align: center;
-  height: 160px!important;
-  line-height: 160px!important;
-  background: #364d79;
+  height: 200px;
+  line-height: 160px;
+  /*background: #364d79;*/
   overflow: hidden;
 }
 .lunbo h3{

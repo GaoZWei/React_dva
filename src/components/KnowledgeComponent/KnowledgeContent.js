@@ -18,7 +18,8 @@ const KnowledgeContent=()=>(
 
       </TextArea>
       <div style={{textAlign:'center'}}>
-        <Button type="dashed">保存/上传知识点</Button>
+        <Button type="dashed">保存</Button>
+        <Button type="dashed">保存并分享</Button>
         <Button type="danger">删除知识点</Button>
       </div>
     </div>

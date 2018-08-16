@@ -29,7 +29,7 @@ const NavComponent=()=>(
               <span className="nav-text">搜索</span></span>}/>
         </Menu.Item>
         <Menu.Item key="5">
-            <NavLeft target="/knowledge" linkText={<span>
+            <NavLeft target="/share" linkText={<span>
           <Icon type="cloud-o"/>
           <span className="nav-text">我的分享</span></span>}/>
         </Menu.Item>

@@ -3,6 +3,8 @@ import {connect} from 'dva';
 import {Layout} from 'antd';
 import NavComponent from '../../components/NavComponent/NavComponent'
 import Lunbo from '../../components/OnlineComponent/Lunbo';
+import Hot from '../../components/HotComponent/HotKnowledge';
+import OnlineKnowledge from '../../components/OnlineComponent/OnlineKnowledge'
 class Online extends React.Component {
   constructor(props) {
     super(props);
@@ -11,8 +13,12 @@ class Online extends React.Component {
     return(
       <Layout>
         <NavComponent/>
-        <Layout style={{marginTop:20,border:20,backgroundColor:"yellow",height:600}}>
+        <Layout style={{border:20,height:600}}>
           <Lunbo/>
+          <Layout style={{marginLeft:200}}>
+            <OnlineKnowledge/>
+           <Hot/>
+          </Layout>
         </Layout>
 
 

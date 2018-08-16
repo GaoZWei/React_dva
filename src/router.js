@@ -6,7 +6,8 @@ import Sort from './routes/Sort/Sort';
 import Online from './routes/Online/Online';
 import Hot from './routes/Hot/Hot';
 import Knowledge from './routes/Knowledge/Knowledge'
-import IndexPage from './routes/IndexPage'
+import Collect from './routes/Collection/Collect'
+import Share from './routes/Share/Share'
 
 function RouterConfig({ history }) {
   return (
@@ -17,8 +18,9 @@ function RouterConfig({ history }) {
         <Route path="/sort" exact component={Sort} />
         <Route path="/online" exact component={Online} />
         <Route path="/hot" exact component={Hot} />
-        <Route path="/indexPage" exact component={IndexPage} />
         <Route path="/knowledge" exact component={Knowledge} />
+        <Route path="/collect" exact component={Collect} />
+        <Route path="/share" exact component={Share} />
       </Switch>
     </Router>
   );
