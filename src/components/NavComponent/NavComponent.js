@@ -18,7 +18,7 @@ const NavComponent=()=>(
             </span>}/>
         </Menu.Item>
         <Menu.Item key="3">
-          <NavLeft target="/knowledge" linkText={<span>
+          <NavLeft target="/addknowledge" linkText={<span>
           <Icon type="upload"/>
           <span className="nav-text">添加</span></span>}/>
         </Menu.Item>

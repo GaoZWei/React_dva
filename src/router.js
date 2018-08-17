@@ -8,6 +8,7 @@ import Hot from './routes/Hot/Hot';
 import Knowledge from './routes/Knowledge/Knowledge'
 import Collect from './routes/Collection/Collect'
 import Share from './routes/Share/Share'
+import AddKnowledge from './routes/Knowledge/AddKnowlege'
 
 function RouterConfig({ history }) {
   return (
@@ -19,6 +20,7 @@ function RouterConfig({ history }) {
         <Route path="/online" exact component={Online} />
         <Route path="/hot" exact component={Hot} />
         <Route path="/knowledge" exact component={Knowledge} />
+        <Route path="/addknowledge" exact component={AddKnowledge} />
         <Route path="/collect" exact component={Collect} />
         <Route path="/share" exact component={Share} />
       </Switch>
