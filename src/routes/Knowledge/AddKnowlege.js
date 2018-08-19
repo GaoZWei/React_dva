@@ -12,7 +12,7 @@ class AddKnowledge extends React.Component {
       <Layout>
         <NavComponent/>
 
-        <Layout style={{marginLeft:200,marginRight:200,width:700}}>
+        <Layout style={{marginLeft:220,marginRight:350,width:700}}>
           <AddKnowledgeComponent/>
         </Layout>
       </Layout>

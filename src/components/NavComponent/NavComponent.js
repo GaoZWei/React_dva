@@ -1,10 +1,13 @@
 import React from 'react';
 import {Layout,Menu,Icon,Avatar} from 'antd';
 import NavLeft from './NavLeft'
+import logo from '../../assets/logo.png'
 const {Sider} = Layout;
+
 
 const NavComponent=()=>(
     <Sider style={{overflow: 'auto', height: '100vh', position: 'fixed', left: 0}}>
+      <img src={logo} style={{width:50,height:50,marginLeft:62,marginTop:20,marginBottom:20}}/>
       <div className="logo"/>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
         <Menu.Item key="1">
@@ -49,14 +52,9 @@ const NavComponent=()=>(
           <Icon type="shop"/>
           <span className="nav-text">我的收藏</span></span>}/>
         </Menu.Item>
-        <Menu.Item key="9">
-          <Icon type="person"/>
-          <span className="nav-text">
-            <Avatar
-            style={{color: '#f56a00', backgroundColor: '#fde3cf'}}>高</Avatar>
-          </span>
-        </Menu.Item>
       </Menu>
+      <Avatar
+        style={{color: '#f56a00', backgroundColor: '#fde3cf',marginLeft:68,marginTop:30}}>高</Avatar>
     </Sider>
 
 );

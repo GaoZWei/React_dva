@@ -33,7 +33,7 @@ const data = [
 ];
 const ShareList=()=>(
   <Layout style={{marginLeft: 200,width:1200}}>
-    <Header style={{background: '#aaa', padding: 0, width: 380, textAlign: 'center'}}>我的收藏</Header>
+    <Header style={{background: '#aaa', padding: 0, width: 380, textAlign: 'center'}}>我的分享</Header>
     <List
       itemLayout="horizontal"
       dataSource={data}

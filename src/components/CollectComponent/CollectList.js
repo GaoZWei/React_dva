@@ -1,5 +1,6 @@
 import React from 'react'
-import {Layout, Avatar, List} from 'antd';
+import {Layout, Avatar, List,Button} from 'antd';
+import $ from 'jquery';
 const {Header}=Layout;
 const data = [
   {
@@ -19,7 +20,30 @@ const data = [
     content:'收藏日期4'
   },
 ];
-const SortList=()=>(
+const SortList=()=>{
+  function qingqiu(){
+    $.ajax({
+      url:'http://localhost:8080/knowledgebase/user/user_knowledge_list',
+      type:'post',
+      dataType: "jsonp",
+      jsonp:"callback",
+      jsonpCallback:"knowledge",
+      data:{
+        // account:311,
+        // password:123
+        id:1
+      },
+      success:function(result){
+        console.log(1)
+        console.log(result[0].title)
+      },
+      // error:function (error) {
+      //   console
+      //   console.log(error)
+      // }
+    })
+  }
+  return(
   <Layout style={{marginLeft: 200,width:1200}}>
     <Header style={{background: '#aaa', padding: 0, width: 380, textAlign: 'center'}}>我的收藏</Header>
     <List
@@ -35,8 +59,9 @@ const SortList=()=>(
         </List.Item>
       )}
     />
-
+   <Button  onClick={qingqiu} title={123}/>
   </Layout>
 );
+}
 export default SortList;
 
