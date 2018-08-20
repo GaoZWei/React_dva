@@ -4,20 +4,26 @@ import {Layout} from 'antd';
 import NavComponent from '../../components/NavComponent/NavComponent'
 import SortList from '../../components/SortComponent/SortList'
 
-class Sort extends React.Component {
-  constructor(props) {
-    super(props);
+
+const Sort = ({dispatch, sort}) => {
+  function handleshow(title) {
+    dispatch({
+      type: 'sort/show',
+      payload: title
+    })
   }
-render(){
-    return(
+
+  return (
+    <Layout>
+      <NavComponent/>
       <Layout>
-        <NavComponent/>
-        <Layout>
-          <SortList/>
-        </Layout>
+        <SortList onshow={handleshow}/>
       </Layout>
-    );
-}
+    </Layout>
+  );
+
 }
 
-export default Sort;
+export default connect(({ sort }) => ({
+  sort,
+}))(Sort);

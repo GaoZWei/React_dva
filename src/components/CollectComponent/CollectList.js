@@ -23,19 +23,20 @@ const data = [
 const SortList=()=>{
   function qingqiu(){
     $.ajax({
-      url:'http://localhost:8080/knowledgebase/user/user_knowledge_list',
-      type:'post',
-      dataType: "jsonp",
-      jsonp:"callback",
-      jsonpCallback:"knowledge",
+      url:'https://api.myjson.com/bins/1g9v3c',
+      type:'get',
+      // dataType: "jsonp",
+      // jsonp:"callback",
+      // jsonpCallback:"knowledge",
       data:{
         // account:311,
         // password:123
-        id:1
+        "id":1
       },
       success:function(result){
         console.log(1)
-        console.log(result[0].title)
+        console.log(result[0][0].title)
+        this.data=result;
       },
       // error:function (error) {
       //   console
