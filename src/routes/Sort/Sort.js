@@ -1,29 +1,35 @@
-import React from 'react';
+import React ,{PropTypes} from 'react';
 import {connect} from 'dva';
 import {Layout} from 'antd';
 import NavComponent from '../../components/NavComponent/NavComponent'
 import SortList from '../../components/SortComponent/SortList'
 
+function Sort ({sorts}){
+  console.log("sorts=========="+sorts);
 
-const Sort = ({dispatch, sort}) => {
-  function handleshow(title) {
-    dispatch({
-      type: 'sort/show',
-      payload: title
-    })
-  }
+  const {list}=sorts;
+
+  const SortListProps = {
+    dataSource: list,
+  };
 
   return (
     <Layout>
       <NavComponent/>
       <Layout>
-        <SortList onshow={handleshow}/>
+        <SortList {...SortListProps}/>
       </Layout>
     </Layout>
-  );
+  )
+    ;
+}
+// Sort.propTypes = {
+//   sorts: PropTypes.object,
+// };
 
+function mapStateToProps({ sorts }) {
+  return {sorts};
 }
 
-export default connect(({ sort }) => ({
-  sort,
-}))(Sort);
+// 建立数据关联关系
+export default connect(mapStateToProps)(Sort);
