@@ -1,5 +1,5 @@
 export default {
-  namespaces: 'sorts',
+  namespace: 'sorts',
   state: {},
   subscriptions: {
     setup({dispatch, history}) {
