@@ -5,10 +5,6 @@ import NavComponent from '../../components/NavComponent/NavComponent'
 import HotPage from '../../components/HotComponent/HotKnowledge'
 
 class Hot extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout>

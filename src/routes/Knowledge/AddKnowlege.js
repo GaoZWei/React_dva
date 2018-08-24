@@ -1,12 +1,9 @@
 import React from 'react';
-import {connect} from 'dva';
 import {Layout} from 'antd';
 import NavComponent from '../../components/NavComponent/NavComponent'
 import AddKnowledgeComponent from '../../components/KnowledgeComponent/AddKnowledgeComponent'
 class AddKnowledge extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
   render(){
     return(
       <Layout>

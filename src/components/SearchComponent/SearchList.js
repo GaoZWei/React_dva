@@ -1,5 +1,5 @@
 import React from 'react';
-import {List, Avatar, Icon} from 'antd';
+import {List, Icon} from 'antd';
 
 const data = [
   'Racing car sprays burning fuel into crowd.',

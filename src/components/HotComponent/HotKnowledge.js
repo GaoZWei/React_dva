@@ -1,5 +1,5 @@
 import React from 'react'
-import {Layout, Button, Card} from 'antd'
+import {Card} from 'antd'
 
 const gridStyle = {
   width: '25%',

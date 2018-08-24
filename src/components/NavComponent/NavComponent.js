@@ -7,7 +7,7 @@ const {Sider} = Layout;
 
 const NavComponent=()=>(
     <Sider style={{overflow: 'auto', height: '100vh', position: 'fixed', left: 0}}>
-      <img src={logo} style={{width:50,height:50,marginLeft:62,marginTop:20,marginBottom:20}}/>
+      <img src={logo} alt={'logo'} style={{width:50,height:50,marginLeft:62,marginTop:20,marginBottom:20}}/>
       <div className="logo"/>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
         <Menu.Item key="1">

@@ -8,10 +8,6 @@ import SearchContent from '../../components/SearchComponent/SearchContent'
 import Foot from '../../components/CommonComponent/Foot'
 
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout>

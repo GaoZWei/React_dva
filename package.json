@@ -27,12 +27,15 @@
     "redbox-react": "^1.4.3",
     "roadhog": "^2.0.0"
   },
-  "propxy":{
-    "/":{
-      "target":"http://localhost:8080/",
-      "changeOrigin":true
+
+  "proxy": {
+    "/api": {
+      "target": "https://jsonplaceholder.typicode.com",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
     }
   }
-
 }
 

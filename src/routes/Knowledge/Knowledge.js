@@ -1,14 +1,11 @@
 import React from 'react';
-import {connect} from 'dva';
 import {Layout} from 'antd';
 import NavComponent from '../../components/NavComponent/NavComponent'
 import KnowledgeList from '../../components/KnowledgeComponent/KnowledgeList'
 import KnowledgeCnontent from  '../../components/KnowledgeComponent/KnowledgeContent'
 
 class Knowledge extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
   render(){
     return(
       <Layout>

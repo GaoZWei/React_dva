@@ -5,9 +5,6 @@ import NavComponent from '../../components/NavComponent/NavComponent'
 import ShareList from '../../components/ShareComponent/ShareList'
 
 class Collect extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

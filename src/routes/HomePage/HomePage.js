@@ -7,10 +7,6 @@ import ContentBreadcrumb from '../../components/ContentComponent/ContentBreadcru
 import ContentMain from '../../components/ContentComponent/ContentMain'
 
 class HomePage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Layout>

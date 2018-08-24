@@ -5,7 +5,7 @@ const {Header}=Layout;
 const SortList=({dataSource})=> {
   return (
     <Layout style={{marginLeft: 200, width: 1200}}>
-      <Header style={{background: '#aaa', padding: 0, width: 380, textAlign: 'center'}}>头部动态显示点击的栏目</Header>
+      <Header style={{background: '#aaa', padding: 0, width: 380, textAlign: 'center'}}>所有分类</Header>
       <List
         itemLayout="horizontal"
         dataSource={dataSource}
@@ -13,7 +13,7 @@ const SortList=({dataSource})=> {
           <List.Item>
             <List.Item.Meta
               avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"/>}
-              title={<a href="https://ant.design">{item.title}</a>}
+              title={<a href="https://ant.design">{item.title}+{item.id}</a>}
               description={item.content}
             />
           </List.Item>

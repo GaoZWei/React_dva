@@ -5,9 +5,6 @@ import NavComponent from '../../components/NavComponent/NavComponent'
 import CollectList from '../../components/CollectComponent/CollectList'
 
 class Collect extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Layout>
